@@ -5,10 +5,18 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { StoriesComponent } from './Components/stories/stories.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { ItemsComponent } from './Components/items/items.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    StoriesComponent,
+    FooterComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,

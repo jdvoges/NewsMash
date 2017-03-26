@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { StoriesComponent } from './Components/stories/stories.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: []
-  }
+
+
+    { 
+        path: '', 
+        redirectTo: '/feed', 
+        pathMatch: 'full' 
+    },
+    { 
+        path: 'feed', 
+        component: StoriesComponent 
+    },
 ];
 
 @NgModule({

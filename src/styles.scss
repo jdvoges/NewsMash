@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+$mobile-only: "only screen and (max-width : 768px)";
+
+body {
+  margin-bottom: 0;
+
+  @media #{$mobile-only} {
+    margin: 0;
+  }
+}
