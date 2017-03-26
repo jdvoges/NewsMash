@@ -8,8 +8,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { StoriesComponent } from './Components/stories/stories.component';
 import { FooterComponent } from './Components/footer/footer.component';
-import { ItemsComponent } from './Components/items/items.component';
-import { HackernewsApiService } from './hackernews-api.service';
+import { ItemComponent } from './Components/item/item.component';
+import { HackerNewsAPIService } from './hackernews-api.service';
+import { ItemCommentsComponent } from './Components/item-comments/item-comments.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HackernewsApiService } from './hackernews-api.service';
     HeaderComponent,
     StoriesComponent,
     FooterComponent,
-    ItemsComponent
+    ItemComponent,
+    ItemCommentsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { HackernewsApiService } from './hackernews-api.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HackernewsApiService],
+  providers: [HackerNewsAPIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
