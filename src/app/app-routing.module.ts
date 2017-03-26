@@ -3,8 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { StoriesComponent } from './Components/stories/stories.component';
 
 const routes: Routes = [
-
-
     { 
         path: '', 
         redirectTo: '/feed', 
